@@ -1,0 +1,26 @@
+package br.com.fiap.locatech.locatech.entities;
+
+import lombok.*;
+import org.springframework.cglib.core.Local;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class Aluguel {
+
+    private Long id;
+    private Long pessoaId;
+    private Long veiculoId;
+    private String veiculoModelo;
+    private String pessoaCpf;
+    private String pessoaNome;
+    private LocalDate dataInicio;
+    private Local dataFim;
+    private BigDecimal valorTotal;
+
+}
